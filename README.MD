@@ -11,12 +11,12 @@ I want an about page that lists a little about my self and the applications tech
 
 Finally I want a search page that upon submit of the form used for the search bar it will generate the current weather and outlook for the location the user put in.
 
-## WorkFlow - Rough Timeline
+## WorkFlow - Rough
 
 - Personal debate - Start Front end or backend? (Undecided)
 
 - Front End 
-
+  - parse weather data (JSON response from backend) and I want to extract the current weather data that is relevant to the location searched.
 
   - Components
    - Navbar (Persistent across all pages)
@@ -31,6 +31,11 @@ Finally I want a search page that upon submit of the form used for the search ba
         - A page that gives detail about my self as the Author and insight on the full stack app.
     - SearchPage
         - A "landing" page for submitting the form(search result) displaying current weather in the location searched.
+
+
+- Back End
+
+  - Utilize the request library to retrieve weather data and send it to the front end.
 
 
 
