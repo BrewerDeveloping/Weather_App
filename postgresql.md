@@ -1,3 +1,3 @@
 # SQL SCHEMA
 
-![Shema](https://i.imgur.com/SCNEWP3.png)
+![Shema](https://i.imgur.com/fTD1Sqt.png)
