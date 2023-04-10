@@ -43,8 +43,7 @@ Finally I want a search page that upon submit of the form used for the search ba
 
 - These are the API's I am currently deciding and will play around with to figure out which will work the best for me.
 
-1 - https://weatherstack.com/ - leaning more towards openweathermap to achieve the use of two separate API's
 
-2 - https://openweathermap.org/api - However this API is very simple to use.
+1 - https://openweathermap.org/api - Obtains weather data
 
-3 - https://rapidapi.com/wirefreethought/api/geodb-cities/ - This API is a must (dont wanna pay google for theirs ;).
+2 - https://rapidapi.com/wirefreethought/api/geodb-cities/ - This API is a must (dont wanna pay google for theirs ;).
