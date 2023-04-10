@@ -3,11 +3,9 @@
 ## About the app
 BrewingWeather will be built utilizing at least 2 APIS, a front end using React, and the backend using Django.
 
-This full stack app is designed to be a user based weather information service. I want to build this application to have a initial "landing page" that is sleek and clean allowing a user login or create a new user.
+This full stack app is designed to be a user based weather information service.
 
-Utilizing a login capability I want the user to be able to set a 'home' location upon login and getting pushed as a new user to a settings page that will use an API to gather a location for the users weather. 
-
-After the user has been created and 'home' location set, I want the user to be able to click a home button via a clean/modern navbar. Lets actually talk about the navbar. The goal for my navbar is to have the title BrewingWeather, potentially set the middle of the navbar to say current time or location. A search bar and submit button that will allow the user to select a location for weather information. Finally I potentially want to add a dropdown bar that shows 'Home'(For the homepage), previous searches(these searches should be stored on the database side and only up to lets say 10 and have previous searchs show this info on a 'history' page), settings(navigates the user to a settings page), potentially a about page, and then finally a logout button that will sign the user out.
+Starting I want there to be a home page that generates current weather for the user's location using a ip fetch, and then also incorporate a 3-5 day outlook (API depending)
 
 
 ## WorkFlow - Rough Timeline
@@ -15,12 +13,21 @@ After the user has been created and 'home' location set, I want the user to be a
 - Personal debate - Start Front end or backend? (Undecided)
 
 - Front End 
-  - Pages
-    - LandingPage 
-        - A page that shows a login screen that allows a existing user to log in or create a new user. Using a Username and password. In the event that the user is already existing I want to ask the user to signup. All this info needs to be sent/stored in the database and queried upon submission.
 
+
+  - Components
+   - Navbar (Persistent across all pages)
+    - Showing Logo/BrewingWeather
+    - Links to Home Page(Take user to the Homepage), About Page(Takes user to the about page), and a Search Page(Essentially a route upon submit button after typing in a **valid city/location in the search bar).
+
+
+  - Pages
     - HomePage
-        - A page that shows weather based on the 'home' location set by the user.
+        - A page that shows weather based on the location of the user utilizing --IP Address (Auto-Fetch)	query = fetch:ip	Pass fetch:ip to the API in order to auto-detect the requester IP address and location.
+    - AboutPage
+        - A page that gives detail about my self as the Author and insight on the full stack app.
+    - SearchPage
+        - A "landing" page for submitting the form(search result) displaying current weather in the location searched.
 
 
 
@@ -28,7 +35,7 @@ After the user has been created and 'home' location set, I want the user to be a
 
 - These are the API's I am currently deciding and will play around with to figure out which will work the best for me.
 
-1 - https://weatherstack.com/ - I am leaning towards this API mainly for the features they provide.
+1 - https://weatherstack.com/ - leaning more towards openweathermap to achieve the use of two separate API's
 
 2 - https://openweathermap.org/api - However this API is very simple to use.
 
