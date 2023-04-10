@@ -28,8 +28,8 @@ After the user has been created and 'home' location set, I want the user to be a
 
 - These are the API's I am currently deciding and will play around with to figure out which will work the best for me.
 
-1 - https://weatherstack.com/ 
+1 - https://weatherstack.com/ - I am leaning towards this API mainly for the features they provide.
 
-2 - https://openweathermap.org/api
+2 - https://openweathermap.org/api - However this API is very simple to use.
 
-3 - https://rapidapi.com/wirefreethought/api/geodb-cities/
+3 - https://rapidapi.com/wirefreethought/api/geodb-cities/ - This API is a must (dont wanna pay google for theirs ;).
