@@ -7,6 +7,9 @@ This full stack app is designed to be a user based weather information service.
 
 Starting I want there to be a home page that generates current weather for the user's location using a ip fetch, and then also incorporate a 3-5 day outlook (API depending)
 
+I want an about page that lists a little about my self and the applications technologies
+
+Finally I want a search page that upon submit of the form used for the search bar it will generate the current weather and outlook for the location the user put in.
 
 ## WorkFlow - Rough Timeline
 
