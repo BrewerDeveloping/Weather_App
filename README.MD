@@ -21,3 +21,15 @@ After the user has been created and 'home' location set, I want the user to be a
 
     - HomePage
         - A page that shows weather based on the 'home' location set by the user.
+
+
+
+## API's
+
+- These are the API's I am currently deciding and will play around with to figure out which will work the best for me.
+
+1 - https://weatherstack.com/ 
+
+2 - https://openweathermap.org/api
+
+3 - https://rapidapi.com/wirefreethought/api/geodb-cities/
