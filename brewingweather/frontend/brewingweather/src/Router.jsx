@@ -4,7 +4,7 @@ import { SignUp } from "./components/SignUp";
 import { LogIn } from "./components/LogIn";
 import LandingPage from "./components/LandingPage";
 
-const Router = createBrowserRouter([
+const Router = createHashRouter([
   {
     path: "/",
     element: <App />,

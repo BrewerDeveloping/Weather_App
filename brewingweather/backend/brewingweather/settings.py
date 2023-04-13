@@ -29,7 +29,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-# LOOK HERE JOSH!!! -->PREV ROOT_URLCONF = 'brewingweather.urls'
+# LOOK HERE JOSH!!! -->PREV ROOT_URLCONF = 'brewingweather_app.urls'
 ROOT_URLCONF = 'user_app.urls'
 
 TEMPLATES = [
