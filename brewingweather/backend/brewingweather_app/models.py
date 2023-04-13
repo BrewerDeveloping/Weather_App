@@ -1,14 +1,16 @@
 from django.db import models
+from user_app.models import App_User
 
-class User(models.Model):
-    id = models.IntegerField(primary_key=True)
-    email = models.CharField(max_length=100)
-    username = models.CharField(max_length=20)
-    password_hash = models.CharField(max_length=100)
-    date_created = models.DateTimeField(auto_now_add=True)
+
+# class User(models.Model):
+#     id = models.IntegerField(primary_key=True)
+#     email = models.CharField(max_length=100)
+#     username = models.CharField(max_length=20)
+#     password_hash = models.CharField(max_length=100)
+#     date_created = models.DateTimeField(auto_now_add=True)
 
 class SearchHistory(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='search_history')
+    user = models.ForeignKey(App_User, on_delete=models.CASCADE, related_name='search_history')
     location_name = models.CharField(max_length=255)
     date_searched = models.DateTimeField(auto_now_add=True)
 
