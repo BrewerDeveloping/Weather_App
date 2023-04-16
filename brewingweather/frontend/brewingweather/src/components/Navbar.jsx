@@ -106,7 +106,7 @@ export const NavBar = () => {
               <NavLink to={"/"}>Home</NavLink>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <NavLink to={"/about"}>About</NavLink>
+              <NavLink to={"/weather"}>Weather</NavLink>
             </DropdownMenuItem>
             <DropdownMenuItem>
               <NavLink to={"/contact"}>Contact</NavLink>
