@@ -1,10 +1,4 @@
-/* .body-login {
-  background-color: aliceblue;
-  width: 1900px;
-  height: 700px;
-} */
-
-.sign-in {
+.sign-up {
   border-radius: 6px;
   box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
   color: #fff;
@@ -16,11 +10,11 @@
   height: 250px;
 }
 
-.sign-in h3 {
+.sign-up h2 {
   margin-top: 0;
 }
 
-.sign-in form {
+.sign-up form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,7 +22,7 @@
   width: 80%;
 }
 
-.sign-in form input {
+.sign-up form input {
   width: 80%;
   margin-bottom: 10px;
   padding: 10px;
@@ -36,31 +30,22 @@
   border-radius: 6px;
 }
 
-.sign-in button {
+.sign-up button {
   width: 80%;
   padding: 10px;
   border: none;
   border-radius: 6px;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #333;
+  color: #fff;
 }
 
-.sign-in .buttons-container {
+.sign-up button:hover {
+  background-color: #666;
+}
+
+.sign-up .buttons {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   width: 80%;
 }
-
-.sign-in button:first-child {
-  margin-right: 10px;
-}
-
- /* .logout-button {
-  width: 80%;
-  height: 20px;
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
-  background-color: #ffffff;
-  color: #000000;
-} */
