@@ -2,6 +2,7 @@ import React, { useState, useEffect, createContext } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { currUser } from "../utilities";
+import { logOut } from "../utilities";
 
 const NavBarContainer = styled.nav`
   display: flex;
@@ -123,6 +124,9 @@ export const NavBar = () => {
             </DropdownMenuItem>
             <DropdownMenuItem>
               <NavLink to={"/about"}>About</NavLink>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <button onClick={() => logOut(setUser)}>LOG OUT</button>
             </DropdownMenuItem>
           </DropdownMenu>
         </DropdownContainer>

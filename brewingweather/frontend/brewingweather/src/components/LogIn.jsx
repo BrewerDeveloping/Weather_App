@@ -13,12 +13,12 @@ export const LogIn = () => {
 
   getToken();
 
-  useEffect(() => {
-    const getCurrUser = async () => {
-      setUser(await currUser());
-    };
-    getCurrUser();
-  }, []);
+  // useEffect(() => {
+  //   const getCurrUser = async () => {
+  //     setUser(await currUser());
+  //   };
+  //   getCurrUser();
+  // }, []);
 
   return (
     <div className="sign-in">
@@ -50,3 +50,5 @@ export const LogIn = () => {
     </div>
   );
 };
+
+export default LogIn;
