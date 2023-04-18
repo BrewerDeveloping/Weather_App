@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, createContext } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { currUser } from "../utilities";
 
 const NavBarContainer = styled.nav`
   display: flex;
@@ -75,6 +76,8 @@ const DropdownMenuItem = styled.li`
   margin-bottom: 0.5rem;
 `;
 
+export const UserContext = createContext(null);
+
 export const NavBar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -90,9 +93,19 @@ export const NavBar = () => {
     setDropdownOpen(false);
   };
 
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const getCurrUser = async () => {
+      setUser(await currUser());
+    };
+    getCurrUser();
+  }, []);
+
   return (
     <NavBarContainer>
       <Logo>BrewingWeather</Logo>
+      <h3>Logged in as {user && user.name} </h3>
       <LinksContainer>
         <NavLink to={"/signup"}>Sign Up</NavLink>
         <NavLink to={"/login"}>Log In</NavLink>
