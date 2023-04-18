@@ -28,6 +28,10 @@ const Router = createHashRouter([
         path: "/weather/",
         element: <Weather />,
       },
+      // {
+      //   path: "/about/",
+      //   element: <About />,
+      // },
       {
         path: "/search/",
         element: <Search />,

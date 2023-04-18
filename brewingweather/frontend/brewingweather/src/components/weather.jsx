@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import CurrentWeather from "./current-weather/current-weather";
 import Search from "./search/search";
 import Forecast from "./forecast/forecast";
 import { WEATHER_API_URL, WEATHER_API_KEY } from "./api";
 import "./weather.css";
+import axios from "axios";
 
 function Weather() {
   const [currentWeather, setCurrentWeather] = useState(null);
@@ -29,6 +30,15 @@ function Weather() {
       })
       .catch(console.log);
   };
+
+  useEffect(() => {
+    if (forecast && currentWeather) {
+      axios.post(`/weather/weather/`, {
+        weather: currentWeather,
+        forecast: forecast,
+      });
+    }
+  }, [forecast]);
 
   return (
     <div className="container">

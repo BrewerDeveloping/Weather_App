@@ -74,4 +74,5 @@ def user_log_out(request):
 def send_the_index(request):
     # return the index from the React side
     the_index = open('static/index.html')
+    print("Now this is user_app index")
     return HttpResponse(the_index)
