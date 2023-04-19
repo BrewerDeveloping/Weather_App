@@ -13,15 +13,15 @@ export const LogIn = () => {
 
   getToken();
 
-  useEffect(() => {
-    const getCurrUser = async () => {
-      setUser(await currUser());
-    };
-    getCurrUser();
-  }, []);
+  // useEffect(() => {
+  //   const getCurrUser = async () => {
+  //     setUser(await currUser());
+  //   };
+  //   getCurrUser();
+  // }, []);
 
   return (
-    <body className="body-login">
+    <div className="sign-in">
       <form
         onSubmit={(e) => [
           e.preventDefault(),
@@ -30,7 +30,7 @@ export const LogIn = () => {
           setPassword(""),
         ]}
       >
-        <h3>Log In</h3>
+        <h2>Log In</h2>
         <input
           placeholder="email"
           value={email}
@@ -42,9 +42,13 @@ export const LogIn = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button onSubmit={() => logIn(user)}>LOG IN</button>
+        <div className="buttons-container">
+          <button onSubmit={() => logIn(user)}>LOG IN</button>
+          <button onClick={() => logOut(setUser)}>LOG OUT</button>
+        </div>
       </form>
-      <button onClick={() => logOut(setUser)}>LOG OUT</button>
-    </body>
+    </div>
   );
 };
+
+export default LogIn;

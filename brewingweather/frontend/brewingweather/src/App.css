@@ -1,12 +1,11 @@
-/* #root {
+#root {
   max-width: 100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: #888;
-} */
+}
 
-.logo {
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -40,4 +39,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */

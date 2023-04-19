@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { signUp } from "../utilities";
+import "../css/signup.css";
 
 export const SignUp = () => {
   const [name, setName] = useState("");
@@ -11,34 +12,38 @@ export const SignUp = () => {
   //   }, [name, email, password])
 
   return (
-    <form
-      onSubmit={(e) => [
-        e.preventDefault(),
-        signUp(name, email, password),
-        setEmail(""),
-        setPassword(""),
-        setName(""),
-      ]}
-      style={{ display: "flex", flexDirection: "column" }}
-    >
-      <h3>Sign Up</h3>
-      <input
-        placeholder="name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <input
-        placeholder="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        placeholder="password"
-        type="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <input type="submit" value="signUp" onClick={"/login"} />
-    </form>
+    <div className="sign-up">
+      <form
+        onSubmit={(e) => [
+          e.preventDefault(),
+          signUp(name, email, password),
+          setEmail(""),
+          setPassword(""),
+          setName(""),
+        ]}
+        style={{ display: "flex", flexDirection: "column" }}
+      >
+        <h2>Sign Up</h2>
+        <input
+          placeholder="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <input
+          placeholder="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <input
+          placeholder="password"
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <input type="submit" value="Sign Up" onClick={"/login"} />
+      </form>
+    </div>
   );
 };
+
+export default "SignUp";

@@ -17,6 +17,7 @@ export const logIn = async (email, password, setUser) => {
   });
 
   setUser(response.data);
+  window.location.reload();
 };
 
 export const currUser = async () => {
@@ -29,5 +30,6 @@ export const logOut = async (setUser) => {
   let response = await axios.post("/logout/");
   if (response.data.logout) {
     setUser(null);
+    window.location.reload();
   }
 };
