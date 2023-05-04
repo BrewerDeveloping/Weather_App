@@ -52,7 +52,7 @@ def user_log_in(request):
 def curr_user(request):
     if request.user.is_authenticated:
         #                    format       query                     options
-        user_info = serialize('json', [request.user], fields = ['name', 'email'])
+        user_info = serialize('json', [request.user], fields = ['id', 'name', 'email'])
         user_info_workable = json.loads(user_info)
         return JsonResponse(user_info_workable[0]['fields'])
     else:

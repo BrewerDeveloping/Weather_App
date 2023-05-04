@@ -123,9 +123,6 @@ export const NavBar = () => {
               <NavLink to={"/weather"}>Weather</NavLink>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <NavLink to={"/about"}>About</NavLink>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
               <button onClick={() => logOut(setUser)}>LOG OUT</button>
             </DropdownMenuItem>
           </DropdownMenu>
