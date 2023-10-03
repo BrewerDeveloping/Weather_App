@@ -1,17 +1,18 @@
 # BrewingWeather - The weather app you didn't know you needed!
 
 ## About the app
-BrewingWeather will be built utilizing at least 2 APIS, a front end using React, and the backend using Django.
+BrewingWeather is a Full Stack web application utilizing Python, Django, and PostgreSQL for backend operations; Javascript and React are utilized on the frontend.
 
-This full stack app is designed to be a user based weather information service.
+This app was built as a final project while I was attending Code Platoon's Full Stack Software Engineer course from January -- May of 2023. The goal that was given to us
+was to build a full stack application that had a working database at least 3 APIs that 2 of those had to be 3rd party. For this project I have listed the 2 third party 
+APIs at the bottom of this read me. My 3rd API is a user authentication API built utilizing Django's built in userauth capabilities.
 
-Starting I want there to be a home page that generates current weather for the user's location using a ip fetch, and then also incorporate a 3-5 day outlook (API depending)
+Furthermore this application was thought of through a love of weather and the distaste of add based application's. Yes of course we can all run ad blocker however a lot of times these web based weather apps ask you to disable ad blocker for their revenue stream. Now with that said of course if this application was setup live all the time and be heavily utilized API calls would begin to rack up therefore I have archived this project for a reference point of where I began to show where I can get to in comparison over time. 
 
-I want an about page that lists a little about my self and the applications technologies
-
-Finally I want a search page that upon submit of the form used for the search bar it will generate the current weather and outlook for the location the user put in.
-
+Please take some time and look through this awesome project as it was a big milestone for me and I truly enjoyed it!
 ## WorkFlow - Rough
+
+!!! NOTE --> I have left this section in the README as it was required during my project idea submission and I want this to stay in place for anytime I want to come back and see how my thought process/problem solving worked at the time. !!!
 
 - Personal debate - Start Front end or backend? (Undecided)
 
